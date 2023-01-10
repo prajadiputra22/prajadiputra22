@@ -5,12 +5,9 @@ for i in menu:
     print(i, '\t :', menu[i])
 
 while True :
-    try:
-        beli = input('\nPilih menu : ')
-        jumlah = int(input('Jumlah : '))
-        total = bayar(jumlah,beli)
-    except KeyError :
-        print('Tolong masukan sesuai yang tertera dimenu, Coba kembali')
+    beli = input('\nPilih menu : ')
+    jumlah = int(input('Jumlah : '))
+    total = bayar(jumlah,beli)
 
     nota = open("nota.txt", "w")
     nota.write("\n===== NOTA PEMBAYARAN =====\n")
